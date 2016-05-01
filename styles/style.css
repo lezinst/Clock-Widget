@@ -1,0 +1,31 @@
+html, body {
+    
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding:0px;
+    
+}
+
+
+.box {
+    
+    width: 700px;
+    height: 400px;
+    background-color:rgba(128,128,128,.4);
+    margin: 0px auto;
+}
+
+#left-panel{
+    width:15%;
+    height:auto;
+    
+}
+
+#top-panel{
+    
+}
+
+#bottom-panel{
+    
+}
