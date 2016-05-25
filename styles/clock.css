@@ -1,55 +1,48 @@
 
-svg{
-    display:block;
-    margin:0 auto;
+#clock-outer{
+  width:100%;
+  height:auto;
+  padding:5%;
 }
-
-#circle {
-    margin-left:35%;
- 
-}
-
-
 
 .center-hands {
-    position: absolute;
-    text-align: center;
-    height:200px;
-    width: 100px;
-     top: 5%;
-     left:35%;
+  position:relative;
+
+}
+
+.center-hands img{
+  width:100%;
 }
 
 
-.clock {
-  border-radius: 50%;
-  background: #fff url(/images/posts/clocks/ios_clock.svg) no-repeat center;
-  background-size: 88%;
-  height: 20em;
-  padding-bottom: 31%;
-  position: relative;
-  margin:5em;
-  width: 20em;
+#circle {
+  position: absolute;
+  top: 48%;
+  left:48%;
+
 }
 
-
-
-
-.seconds-container, .minutes-container, .seconds-container {
-    position: absolute;
-    width:16%;
-    top: 0;
-    left: 0;
-    bottom: 0;
+#seconds {
+  position: absolute;
+  top: 23%;
+  left:41%;
+  transform-origin: center bottom;
 }
 
-
-
-.move {
-    transform: rotate(deg); 
+#minutes {
+  position: absolute;
+  top: 23%;
+  left:41%;
+  transform-origin: center bottom;
 }
 
+#hours{
+  position: absolute;
+  top: 23%;
+  left:41%;
+  transform-origin: center bottom;
 
+}
 
 
 textarea {
