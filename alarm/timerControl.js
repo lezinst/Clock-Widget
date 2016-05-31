@@ -1,6 +1,6 @@
-angular.module('clock').controller('timerControl', function($interval, $scope){
+angular.module('clock').controller('timerControl', function($interval, $scope, clockControlService){
     // var alarmControl = this;
-    $scope.time = 1.00;
+    $scope.time = 0;
     //holds the interval promise
     var promise;
     
@@ -10,10 +10,12 @@ angular.module('clock').controller('timerControl', function($interval, $scope){
 //starts the alarm
     $scope.startTimer = function(){
         $scope.stopCounting();
+        clockControlService.start();
         promise = $interval($scope.startCounting, 1000);
     };
 //cancels the promise returned by the $interval service every second
     $scope.stopCounting = function(){
+    clockControlService.stop(); 
     $interval.cancel(promise);
 
     }
@@ -26,7 +28,9 @@ angular.module('clock').controller('timerControl', function($interval, $scope){
 
     $scope.reset = function(){
         $scope.time = 0;
+        clockControlService.reset();
     }
+
 
 });
 
